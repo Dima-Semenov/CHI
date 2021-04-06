@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .icon {
@@ -224,4 +225,261 @@ body {
   background-color: white;
   color: #458ff6;
   margin-top: 70px;
+}
+
+.gallery {
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 230px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__back {
+    width: 650px;
+    height: 477px;
+    background-image: url("../images/photo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &-new {
+      background-image: url("../images/photo2.png");
+    }
+  }
+
+  &__right {
+    width: 450px;
+
+    &-small {
+      width: 420px;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    margin-bottom: 31px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 2px;
+
+      margin-top: 26px;
+
+      background: #000;
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #7d7987;
+
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    width: 200px;
+    height: 56px;
+
+    border: 1.4px solid #458ff6;
+    border-radius: 55px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+
+    color: #458ff6;
+    background-color: white;
+
+    cursor: pointer;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: white;
+      background-color: #458ff6;
+    }
+  }
+}
+
+.customer {
+  display: flex;
+  justify-content: center;
+  margin-top: 266px;
+
+  &__container {
+    max-width: 1120px;
+    width: 100%;
+    height: 425px;
+    background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+    border-radius: 24px;
+    padding: 64px 118px 89px;
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 77px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 2px;
+
+      margin-top: 25px;
+
+      background: #fff;
+      border-radius: 6px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+
+    color: #fff;
+  }
+
+  &__founder {
+    font-size: 18px;
+
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__quote {
+    display: inline-block;
+    width: 420px;
+
+    font-size: 19px;
+    line-height: 30px;
+
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+}
+
+.article {
+  margin-top: 284px;
+
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    margin-bottom: 72px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 2px;
+
+      margin-top: 25px;
+
+      background: black;
+      border-radius: 5px;
+    }
+  }
+
+  &__catalog {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  &__card {
+    width: 350px;
+    height: 512px;
+    background: #fff;
+    overflow: hidden;
+
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+  }
+
+  &__text {
+    margin: 21px 52px 12px 33px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #7d7987;
+
+    margin: 0 51px 25px 33px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+
+    color: #4089ed;
+
+    margin-left: 33px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url("../images/arrow.svg");
+      width: 15px;
+      height: 10px;
+
+      margin-left: 10px;
+    }
+  }
 }
