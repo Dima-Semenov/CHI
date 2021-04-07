@@ -63,11 +63,7 @@
   }
 
   &__button {
-    width: 200px;
-    height: 56px;
-
     border: 1.4px solid #458ff6;
-    border-radius: 55px;
 
     font-weight: bold;
     font-size: 18px;
@@ -75,13 +71,7 @@
     color: #458ff6;
     background-color: white;
 
-    cursor: pointer;
-    outline: none;
-
-    transition-duration: 0.5s;
-
     &:hover {
-      transform: scale(1.2);
       color: white;
       background-color: #458ff6;
     }

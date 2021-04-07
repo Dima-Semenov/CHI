@@ -50,11 +50,20 @@
     }
   }
 
+  &__photo {
+    width: 100%;
+  }
+
+  &__container {
+    padding: 21px 51px 35px 33px;
+  }
+
   &__text {
-    margin: 21px 52px 12px 33px;
     font-weight: bold;
     font-size: 21px;
     line-height: 32px;
+
+    margin-bottom: 12px;
   }
 
   &__title {
@@ -63,8 +72,7 @@
     line-height: 28px;
 
     color: #7d7987;
-
-    margin: 0 51px 25px 33px;
+    margin-bottom: 25px;
   }
 
   &__link {
@@ -74,8 +82,6 @@
     line-height: 28px;
 
     color: #4089ed;
-
-    margin-left: 33px;
 
     &::after {
       content: "";
@@ -89,21 +95,15 @@
   }
 
   &__button {
-    width: 200px;
-    height: 56px;
     border: 1.4px solid #458ff6;
-    border-radius: 55px;
     background-color: white;
 
     font-weight: bold;
     font-size: 18px;
 
     color: #458ff6;
-    cursor: pointer;
 
     margin-top: 72px;
-    outline: none;
-    transition-duration: 0.5s;
 
     &:hover {
       transform: scale(1.2);
@@ -125,7 +125,17 @@
     }
 
     &__card {
-      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .article {
+    &__card {
+      width: 250px;
+      height: auto;
     }
   }
 }

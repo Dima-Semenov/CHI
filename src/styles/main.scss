@@ -20,6 +20,22 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+.button {
+  min-width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  padding: 0 10px;
+
+  outline: none;
+  cursor: pointer;
+
+  transition-duration: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .main {
   max-width: 1260px;
   margin: 84px auto 0;
